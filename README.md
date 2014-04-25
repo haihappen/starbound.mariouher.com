@@ -39,3 +39,24 @@ sudo aptitude safe-upgrade
 sudo aptitude full-upgrade
 ```
 
+Install Steam. (http://starbounder.org/Guide:LinuxServerSetup)
+
+```sh
+sudo apt-get install lib32gcc1
+sudo apt-get install libvorbisfile3
+mkdir steam; cd steam
+wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz
+tar -zxvf steamcmd_linux.tar.gz
+rm steamcmd_linux.tar.gz
+./steamcmd.sh
+```
+
+Install (and update) Starbound.
+
+```
+login <username> <password>
+force_install_dir /home/ubuntu/starbound
+app_update 211820
+set_steam_guard_code <steam_guard_code>
+quit
+```
