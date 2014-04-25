@@ -60,3 +60,15 @@ app_update 211820
 set_steam_guard_code <steam_guard_code>
 quit
 ```
+
+Copy `starbound.conf` into `/etc/init/starbound.conf`.
+
+## Usage
+
+```sh
+ssh ubuntu@starbound.mariouher.com -i ~/.ssh/uherdotmarioatgmaildotcom
+
+sudo [start|stop|restart] starbound
+```
+
+Logs are stored in `/var/log/upstart/starbound.conf`.
